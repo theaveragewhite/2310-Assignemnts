@@ -1,0 +1,28 @@
+1.
+
+Output for the while loop
+A = 18, B = 1, C = 18
+
+2.
+
+Output for do while loop
+The triangular number for 4 is 10
+
+3.
+
+----------------------------------
+Branch    |  N  |  and/or  |  Z  |
+----------------------------------
+b or bal  |  X  |    --    |  X  |
+beq       |  X  |    --    |  1  |
+bne       |  X  |    --    |  0  |
+blt       |  1  |    --    |  0  |
+ble       |  1  |    or    |  1  |
+bgt       |  0  |    and    |  0  |
+bge       |  0  |    --    |  X  |
+----------------------------------
+
+4.
+
+Output for if else loop
+Z=0

@@ -1,0 +1,51 @@
+;============================================================
+; Program: Parameter Passing
+; Name: Colton Owenby
+; Course: 2310
+; Section: 001
+; Program Number: 7
+; Date: 6/7/2024
+;============================================================
+1. Fill in the table below for every call to "fact" in fac.s. Each row
+represents the values of r1 and lr when line 3 executes and they are pushed
+onto the stack. The first time it executes, r1 is unset and the lr points to line 39.
+
+r1	lr
+---	-------
+-	  39
+10	12
+9   12
+8   12
+7   12
+6   12
+5   12
+4   12
+3   12
+2   12
+1   12
+
+
+2. In "fac.s", the multiply instruction on line 12 comes after a "bl" which is a branch that will always be taken. How does line 12 get executed if the "bl" is always taken?
+
+HINT: Review what "bl" does at https://developer.arm.com/documentation/dui0068/b/CIHFDDAF (scroll down to "Usage")
+
+When fac finishes execution and pop {r1, pc} is executed
+control returns to the address stored in lr,
+which was the instruction following the bl call.
+
+
+
+3. Why doesn't the code in "fac2.s" save any registers on the stack? What is it doing instead?
+It doesn’t call itself or any other function
+that would overwrite the contents of the registers it’s using.
+This is due to it using a loop and being iterative
+
+
+4. Identify which program calculates the factorial recursively and which is iterative.
+fac is recursive
+fac2 is iterative
+
+
+NOTE: The comments for "main:" in "fac.s" are already done for you and you do not have to comment "main:" in "fac2.s".
+
+test

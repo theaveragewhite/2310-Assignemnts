@@ -1,0 +1,93 @@
+LAB WORKSHEET
+
+------ PART I ------
+
+1. Take a look at the "sum" register in the GUI. What value(s) does "sum" need to be in order for the Z flag to be 1?
+
+2. Give a signed decimal value for the "sum" register that keeps the N flag lowered (i.e., 0).
+
+3. Now give an unsigned decimal value for "sum" that lowers the N flag i.e., makes it 0.
+
+4. Why is the carry-in bit set to 1 during subtraction?
+
+------ PART II ------
+
+For the following entries, perform the arithmetic assuming UNSIGNED 4-bit registers, and fill in the flags (conditional codes) based on value in the "sum" register.
+
+Use the GUI binary adder to help you out. Note: Subtraction is performed using 2's completment however, you should still put the positive value in the cells.
+
+Also, when I prompt for "NZVC:" I'm asking you to stick together all of the flags (conditional codes) in that order. So, for example, if all flags are lowered, you would say 0000, if the N flag is raised you would say 1000, etc, etc.
+
+(fill in where there is a _)
+====================================================
+Decimal                 Binary
+----------------------------------------------------
+10                       _
++3                      +_
+=_                      =_
+----------------------------------------------------
+NZVC: _
+====================================================
+
+====================================================
+Decimal                 Binary
+----------------------------------------------------
+_                        0111
++_                      +0111
+=_                      =_
+----------------------------------------------------
+NZVC: _
+====================================================
+
+====================================================
+Decimal                 Binary
+----------------------------------------------------
+_                        1100
+-_                      -_
+=_                      =0111
+----------------------------------------------------
+NZVC: _
+====================================================
+
+====================================================
+Decimal                 Binary
+----------------------------------------------------
+10                       _
+-6                      -_
+=4                      =_
+----------------------------------------------------
+NZVC: _
+====================================================
+
+
+Now switch and assume SIGNED arithmetic (still 4-bit registers)
+
+====================================================
+Decimal                 Binary
+----------------------------------------------------
+4                       _
++3                      +_
+=_                      =_
+----------------------------------------------------
+NZVC: _
+====================================================
+
+====================================================
+Decimal                 Binary
+----------------------------------------------------
+_                        0100
++_                      +1010
+=_                      =_
+----------------------------------------------------
+NZVC: _
+====================================================
+
+====================================================
+Decimal                 Binary
+----------------------------------------------------
+_                        0100
+-_                      -1010
+=_                      =_
+----------------------------------------------------
+NZVC: _
+====================================================
