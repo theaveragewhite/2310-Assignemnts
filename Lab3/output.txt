@@ -1,0 +1,2 @@
+Number of sentences are 7.
+Number of words are 14.

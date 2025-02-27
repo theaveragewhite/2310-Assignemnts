@@ -1,0 +1,16 @@
+program = main.out
+tar = -czvf
+untar = -xzvf
+list = ls -1
+MESSAGE=HELLO WORLD!
+
+all:
+	build tar list
+build:
+	echo "${MESSAGE}"
+tar:
+	tar -czvf test.tar.gz *
+untar:
+	tar -xzvf test.tar.gz
+list:
+	ls -1
